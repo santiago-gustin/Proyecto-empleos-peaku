@@ -1,17 +1,21 @@
 .container-searcher{
+    position: sticky;
+    top: 0;
+    z-index: 1;
     height: 72px;
-    width: 100%;
+    max-width: 100%;
     background-color: #3A8CED;
     display: flex;
-    padding-left: 70px;
+    margin-left: 98px;
 }
 
 form{
     border: 1px solid #B5B4B4;
     border-radius: 3px;
+    margin-left: 10vh;
 }
 
-.container-input-search {
+.container-img-search {
     height: 6vh;
     width: 6vh;
     background-color: #F8F9FA;
@@ -30,9 +34,8 @@ form{
 }
 
 .input-search{
-    font-size: 70%;
     border: none;
-    height: 6vh;
+    max-height: 6vh;
     width: 80vh;
     border-top-right-radius: 3px;
     border-end-end-radius: 3px;
@@ -40,7 +43,7 @@ form{
 }
 
 .container-buttons{
-    margin-left: 35vh;
+    margin-left: 25vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -68,3 +71,40 @@ form{
     padding-inline: 1px;
   }
  
+  @media screen and (max-width: 1000px) {
+    .container-searcher {
+        height: 72px;
+        max-width: 100%;
+    }
+
+    form{
+        height: 3vh;
+        width: 40vh;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .container-img-search {
+        height: 100%;
+        width: 10%;
+    }
+
+    .img-search{
+        height: 50%;
+        width: 30%;
+    }
+
+    .input-search{
+        height: 100%;
+        width: 100%;
+        font-size: small;
+    }
+
+    .container-buttons__button{
+        font-size: small;
+    }
+    .triangle-down::after {
+        display: none;
+      }
+  }
+  

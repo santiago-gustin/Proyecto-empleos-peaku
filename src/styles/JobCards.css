@@ -1,17 +1,20 @@
 .container-card {
     width: 90%;
     height: 15vh;
+    min-height: 15vh;
     display: flex;
     align-content: center;
     border: 1px solid #DEE2E6;
+    border-radius: 5px;
     background-color: #FFFFFF;
+    margin: 10px 5px 10px 115px;
 }
 
 .container-card:hover{
-    box-shadow: 3px 12px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2)
 }
 
-container-text{
+.container-text{
     width: 100%;
     height: 100%;
 }
@@ -21,13 +24,46 @@ container-text{
     padding-top: 15px;
 }
 
+.container-title h4:hover{
+    font-weight: 650;
+    cursor: pointer;
+}
+
 .container-title__programs{
     display: flex;
+    white-space: nowrap;
+    height: auto;
+}
+
+.container-title__programs:hover{
+    cursor: pointer;
 }
 
 .container-title__programs p{
-    margin-inline: 2px;
-    padding-inline: 10px;
+    margin-inline: 1vh;
+    padding-inline: 2vh;
     border: 1px solid #343A40;
     border-radius: 20px;
+    font-size: small;
 }
+
+@media screen and (max-width: 850px) {
+    .job-information{
+        display: none;
+    }
+
+    .container-title__programs p{
+        padding-inline: 1vh;
+        padding-block: 0;
+        height: 25px;
+        white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    }
+
+    .container-title{
+        padding-top: 10px;
+    }
+
+    .container-title h4{
+        font-size: medium;
+    }
+  }

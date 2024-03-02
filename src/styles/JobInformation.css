@@ -10,6 +10,7 @@
     white-space: nowrap; /* Evita que el texto se divida en varias líneas */
     overflow: hidden; /* Oculta el texto que desborda el contenedor */
     text-overflow: ellipsis; /* Muestra puntos suspensivos (...) cuando el texto desborda */
+    font-size: small;
 }
 
 .img-information{

@@ -17,7 +17,7 @@ const JobCards = (props) =>{
                     </div>
                 </div>
                 <div>
-                    <JobInformation information={props.information}/>
+                    <JobInformation className='job-information' information={props.information}/>
                 </div>                
             </div>
         </div>

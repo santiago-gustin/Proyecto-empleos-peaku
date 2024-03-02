@@ -9,7 +9,7 @@ const Searcher = () =>{
             <nav className="navbar bg-body-tertiary">
             <div className="container-fluid">
                 <form className="d-flex" role="search">
-                    <div className="container-input-search">
+                    <div className="container-img-search">
                         <img className='img-search' src={logoLupa} alt='...' />
                     </div>
                     <input className="input-search" type="search" placeholder="   Busca por cargo, salario, ubicación o empresa" aria-label="Search" />
